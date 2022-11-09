@@ -6,6 +6,18 @@ The metabolic and proteomic MS data can be found in the folder ```data/```.
 - **met_forVirus.csv**: the metabolic data for virus infection classification
 - **pro_forVirus.csv**: the proteomic data for virus infection classification
 
+## Saved models and predictions
+### Path
+The metabolic and proteomic MS data can be found in the folder ```models/```.
+### Saved models for infection classification 
+- **dl_forInfection_both**: trained with bimodal of metabolic and proteomic MS data
+- **dl_forInfection_met**: trained with single modal of metabolic MS data
+- **dl_forInfection_pro**: trained with single modal of proteomic MS data
+### Saved models for virus infection classification 
+- **dl_forVirus_both**: trained with bimodal of metabolic and proteomic MS data
+- **dl_forVirus_met**: trained with single modal of metabolic MS data
+- **dl_forVirus_pro**: trained with single modal of proteomic MS data
+
 ## Codes
 ### Reqiurements
 ```
