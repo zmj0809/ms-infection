@@ -18,9 +18,9 @@ if __name__ == '__main__':
     task = args.task
 
     torch.cuda.set_device(args.device_id)
-    met_path = "data/nobe/met_{}.csv".format(args.file_marker)
-    pro_path = "data/nobe/pro_{}.csv".format(args.file_marker)
-    model_dir = "models/clfs/dl_{}_{}".format(args.file_marker, task)
+    met_path = "data/met_{}.csv".format(args.file_marker)
+    pro_path = "data/pro_{}.csv".format(args.file_marker)
+    model_dir = "models/dl_{}_{}".format(args.file_marker, task)
 
     ids, labels, boards, data = load_data(met_path, pro_path, task)
     labels = np.expand_dims(labels, axis = -1)
